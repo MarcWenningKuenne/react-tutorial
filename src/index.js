@@ -7,6 +7,10 @@ Challenge:
 
 - Add an `ul` inside the Header's `nav` and create
   the following `li`s: "Pricing", "About", & "Contact"
+- Using flexbox, line up the nav items horizontally, and
+  put them inline with the React logo.
+- Change the image styling to happen in CSS instead of in-line
+  For practice, add a new class to the image in order to style it
 */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,9 +21,9 @@ function Navbar() {
       <nav className='nav'>
         <img className='nav-logo' src='./images/react-logo.png'></img>
         <ul className='nav-items'>
-          <li className='navbar-li'>Pricing</li>
-          <li className='navbar-li'>About</li>
-          <li className='navbar-li'>Contact</li>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
         </ul>
       </nav>
     </header>
