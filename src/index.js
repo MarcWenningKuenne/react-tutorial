@@ -11,7 +11,7 @@ into their own files.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-function Page() {
+function App() {
   return (
     <div>
       <Header />
@@ -22,7 +22,7 @@ function Page() {
 }
 
 root.render(
-  <Page />, root
+  <App />, root
 );
 
 
