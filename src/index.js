@@ -1,26 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 
 /**
 Challenge: 
 
-Part 2: 
-- Add a `header` element with a nested `nav` element. Inside the `nav`,
-  include a `img` element with the image of the React logo inside
-  (src="./react-logo.png") and make sure to set the width to something
-  more manageable so it doesn't take up the whole screen
-- Add an `h1` with some text describing the page. (E.g. "Reasons
-  I'm excited to learn React"). Place it above the ordered list.
-- Add a `footer` after the list that says: 
-    "© 20xx <last name here> development. All rights reserved."
-
- */
+- Add an `ul` inside the Header's `nav` and create
+  the following `li`s: "Pricing", "About", & "Contact"
+*/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function Navbar() {
   return(
-    <img src='./images/react-logo.png' width="40"></img>
+    <header>
+      <nav className='nav'>
+        <img className='nav-logo' src='./images/react-logo.png'></img>
+        <ul className='nav-items'>
+          <li className='navbar-li'>Pricing</li>
+          <li className='navbar-li'>About</li>
+          <li className='navbar-li'>Contact</li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 
@@ -55,7 +57,6 @@ function Page() {
       <Footer />
     </div>
   )
-  
 }
 
 root.render(
