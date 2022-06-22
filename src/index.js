@@ -1,41 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-/*
-Challenge: Starting from scratch, build and render the 
-HTML for our section project. Check the Google slide for 
-what you're trying to build.
+/**
+Challenge: 
 
+Part 1: Create a page of your own using a custom Page component
 
+It should return an ordered list with the reasons why you're
+excited to be learning React :)
 
-We'll be adding styling to it later.
+Render your list to the page
 
-Hints:
-* The React logo is a file in the project tree, so you can
-  access it by using `src="./react-logo.png" in your image
-  element
-* You can also set the `width` attribute of the image element
-  just like in HTML. In the slide, I have it set to 40px
- */
+*/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const page = (
-  <div>
-    <img src='.\images\react-logo.png' width="40"></img>
-    <h1>Fun facts about React</h1>
-    <ul>
-      <li>Was first released in 2013</li>
-      <li>Was originally created by Jordan Walke</li>
-      <li>Has well over 100K stars on Github</li>
-      <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including <br /> mobile apps</li>
-    </ul>
-  </div>
-)
+function GetReasonsWhyIAmExcited() {
+  return (
+    <ol>
+      <li>Ich möchte gerne programmieren lernen</li>
+      <li>Das direkte Feedback über die Oberfläche hält mich bei Laune</li>
+      <li>React scheint die modernste und vielversprechenste Front-End-Sprache</li>
+    </ol>
+  )
+}
 
 root.render(
-  page, root
+  <GetReasonsWhyIAmExcited />, root
 );
 
 
