@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+// Challenge: Create your own custom React component!
+// Call it "MainContent", and have it return a simple
+// h1 element that says "I'm learning React!"
+// Afterward, render it
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+function MainContent () {
+  return (
+    <h1>I'm learning React!</h1>
+  )
+}
+
+
 root.render(
-  /* Surprise! You probably thought you could just forget
-  the line of code you just learned! Nope, not on my watch!
-
-  Try to write that 1-liner of React code again! This time,
-  see if you can figure out how to render an <ul> with 2+ <li>s inside*/
-
-  <ul>
-    <li>List Item 1</li>
-    <li>List Item 2</li>
-    <li>List Item 3</li>
-  </ul>
+  <MainContent/>
 );
